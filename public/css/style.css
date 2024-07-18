@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #e4e9fd;
+    background-image: linear-gradient(40deg, rgb(150, 96, 212) 50%, rgb(233, 221, 245) 50%);
+    background-repeat: no-repeat;
+    margin: auto;
+    min-height: 1000px;
+}
+
+h1 {
+    color: #050000;
+    padding: 10px;
+}
+
+.box {
+    max-width: 300px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+
+.item {
+    display: flex;
+    min-height: 70px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+/* .item.hide {
+    display: none;
+} */
+/* style submit btn  */
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(150, 96, 212);
+    border: transparent;
+}
+
+/* Style for the unchecked checkbox */
+input[type="checkbox"] {
+
+    margin-right: 20px;
+}
+
+/* Style for the checked checkbox and the crossed-out text */
+input[type="checkbox"]:checked+.crossOut {
+    text-decoration: line-through;
+    /* Apply a line-through style to the text */
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid #a683e3;
+}

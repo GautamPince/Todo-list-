@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToDo LIST</title>
+
+</head>
+<body>
+    <div class="box">
+        <h1>ToDo LiSt</h1>
+    </div>
+    <div class="box">
+        <% for(var i=0;i< elem.length ; i++) {%>
+            <div class="item">
+                <input type="checkbox">
+                <p class="crossOut">
+                    <%= elem[i] %>
+                </p>
+            </div>
+            <% }%>
+
+                <form action="/" method="post" onsubmit="return addItem()">
+                    <input type="text" name="elem1" id="elem1" placeholder="Enter the task">
+                    <button type="submit">+</button>
+                </form>
+    </div>
+</body>
+<script>
+    function addItem() {
+        var inputElement = document.getElementById('elem1');
+        var inputValue = inputElement.value.trim(); // Trim to remove leading and trailing whitespaces
+
+        if (inputValue === "") {
+            // Display an alert or perform any other action to inform the user
+            alert("Please enter a task before adding.");
+            return false; // Prevent form submission
+        }
+
+        // If the input is not empty, proceed with form submission
+        return true;
+    }
+</script>
+</html>
